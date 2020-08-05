@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title> calculator</title>
+  
+</head>
+<body  style="margin:180px;align-content:center;">
+    <form name="my">
+        <input type="text" name="txt1"size="30"text-align="right" /><br/>
+    
+    
+        
+    
+ <table style="background-color:orangered">
+     <tr>
+   <th> <input type="button" name="btn" value="." onclick="display(btn.value)" /> </th>
+   <th> <input type="button" name="btn1"value="backspace"style="color:red;"  /></th>
+  <th> <input type="reset" name="btn2"value="reset" style="color:darkgreen;" /></th>
+       <th> <input type="button" name="btn3"value="OFF"style="color:darkorange;" onclick="off()"/> </th>
+         </tr>
+   <tr>
+     <th> <input type="button"value="1" name="btn4"onclick="display(btn4.value)" /></th>
+   <th>  <input type="button" name="btn5"value="2"  style="align-content:center"onclick="display(btn5.value)"/></th>
+    <th><input type="button" name="btn6"value="3" onclick="display(btn6.value)"/></th>
+    <th> <input type="button"name="btn7"value="+"  style="border-radius:50%;color:orangered;"onclick="display(btn7.value)"/></th>
+       </tr>
+   <tr>
+       <th> <input type="button" name="btn8" value="4" onclick="display(btn8.value)" /></th>
+       <th> <input type="button" name="btn9" value="5" onclick="display(btn9.value)" /></th>
+       <th> <input type="button" value="6" name="btn42" onclick="display(btn42.value)" /></th>
+
+
+       <th> <input type="button" name="btn11" value="-" style="border-radius:50%;color:purple;" onclick="display(btn11.value)" /></th>
+   </tr>
+    <tr>  
+  <th>  <input type="button" name="btn12"value="7" onclick="display(btn12.value)"/></th>
+   <th> <input type="button" name="btn13"value="8" onclick="display(btn13.value)"/></th>
+  <th>  <input type="button" name="btn14"value="9" onclick="display(btn14.value)"/></th>
+    <th> <input type="button"name="btn15" value="*" style="border-radius:50%;color:crimson;"onclick="display(btn15.value)" /></th>
+        </tr>
+   <tr>
+  <th> <input type="button" name="btn16"value="0" onclick="display(btn16.value)"/> </th>
+   <th><input type="button" name="btn17"value="00"onclick="display(btn17.value)"/> </th>
+  <th> <input type="button" name="btn18"value="/" style="border-radius:50%;color:firebrick;"onclick="display(btn18.value)"/> </th>
+   <th> <input type="button"name="btn19" value="ans" style="border-radius:50%;color:blue;"onclick="txt1.value = eval(txt1.value)" /></th>
+       </tr>
+     </table>
+        </form>
+    <script>
+        function display(num) {
+            my.txt1.value = my.txt1.value + num;
+
+           
+        }
+        function off(){
+            my.txt1.value = "";
+        }
+        
+    </script>
+
+</body>
+</html>

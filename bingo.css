@@ -1,0 +1,23 @@
+﻿header h1{
+    text-align: center;
+    font-family: 'Bookman Old Style';
+    background-color: magenta;
+    color: red;
+}
+header{
+    background-color:aqua;
+
+}
+p{
+    color:darkviolet;
+    font-size:25px;
+    font-family:Andalus;
+    box-shadow:4px 4px 4px cyan;
+   
+}
+#chips{
+    background-color:lime;
+    box-shadow:8px 8px 8px red;
+    height:400px;
+    text-align:center;
+}
